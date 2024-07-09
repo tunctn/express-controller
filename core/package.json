@@ -1,0 +1,13 @@
+{
+  "name": "@express-controller/core",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "./dist/src/index.js",
+  "types": "./src/index",
+  "scripts": {
+    "build": "tsc && npx swc src --out-dir dist"
+  }
+}

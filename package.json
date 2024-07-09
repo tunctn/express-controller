@@ -1,0 +1,42 @@
+{
+  "name": "express-controller",
+  "version": "1.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "./dist/src/index.js",
+  "types": "./src/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tunctn/express-controller.git"
+  },
+  "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "build": "turbo run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.6",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.6.6",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@tsconfig/recommended": "^1.0.6",
+    "@types/node": "^20.14.9",
+    "semantic-release": "^24.0.0",
+    "tsconfig.json": "link:@tsconfig/recommended/tsconfig.json",
+    "turbo": "^2.0.6"
+  }
+}
