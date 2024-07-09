@@ -16,8 +16,10 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
+    "dev": "turbo run dev",
     "build": "turbo run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-packages": "turbo run build && changeset version && changeset publish"
   },
   "packageManager": "pnpm@9.0.0",
   "keywords": [],
@@ -35,8 +37,12 @@
     "@total-typescript/ts-reset": "^0.5.1",
     "@tsconfig/recommended": "^1.0.6",
     "@types/node": "^20.14.9",
+    "chokidar": "^3.6.0",
     "semantic-release": "^24.0.0",
     "tsconfig.json": "link:@tsconfig/recommended/tsconfig.json",
     "turbo": "^2.0.6"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.7"
   }
 }

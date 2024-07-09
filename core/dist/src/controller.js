@@ -17,24 +17,28 @@ function _create_class(Constructor, protoProps, staticProps) {
     if (staticProps) _defineProperties(Constructor, staticProps);
     return Constructor;
 }
-export var Greeting = /*#__PURE__*/ function() {
+export var Controller = /*#__PURE__*/ function() {
     "use strict";
-    function Greeting() {
-        _class_call_check(this, Greeting);
+    function Controller() {
+        _class_call_check(this, Controller);
     }
-    _create_class(Greeting, [
+    _create_class(Controller, [
         {
-            key: "greet",
-            value: function greet() {
-                console.log('Greeting, Node user!');
+            key: "build",
+            value: function build() {
+                console.log('Controller!');
             }
         },
         {
             key: "extend",
-            value: function extend(plugin) {
-                return plugin(this);
+            value: function extend(plugins) {
+                var _this = this;
+                plugins.forEach(function(plugin) {
+                    plugin(_this);
+                });
+                return this;
             }
         }
     ]);
-    return Greeting;
+    return Controller;
 }();
