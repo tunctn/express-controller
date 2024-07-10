@@ -12,6 +12,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
     "build": "tsc && npx swc src --out-dir dist",
     "dev": "npx swc src --out-dir dist --watch"
   },
