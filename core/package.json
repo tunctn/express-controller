@@ -14,5 +14,13 @@
   "scripts": {
     "build": "tsc && npx swc src --out-dir dist",
     "dev": "npx swc src --out-dir dist --watch"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-serve-static-core": "^4.19.5",
+    "@types/qs": "^6.9.15"
   }
 }
