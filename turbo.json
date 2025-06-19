@@ -7,6 +7,15 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
+    "major": {
+      "dependsOn": ["^major"]
+    },
+    "minor": {
+      "dependsOn": ["^minor"]
+    },
+    "patch": {
+      "dependsOn": ["^patch"]
+    },
     "dev": {
       "persistent": true,
       "cache": false
